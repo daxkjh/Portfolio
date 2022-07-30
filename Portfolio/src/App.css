@@ -1,41 +1,171 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
+  width:100vw;
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.Navbar{
+  position: relative;
+  width:100%;
+  /* min-width: 600px; */
+  height: 1rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+ul {
+  padding-left: 0;
+  list-style-type:none;
+}
+
+.navlink{
+  display: inline;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.textContainer{
+  position: relative;
+  margin: 0 auto;
+  padding-top: 35vh;
+  width:100%;
+
+}
+
+.Intro{
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(27, 28, 28);
+}
+
+.introName{
+  color: orange
+}
+
+  .css-typing p {
+    border-right: .15em solid orange;
+    font-family: "Courier";
+    font-size: 1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
   }
-  to {
-    transform: rotate(360deg);
+  .css-typing p:nth-child(1) {
+    width: 8.5em;
+    -webkit-animation: type 2s steps(14, end);
+    animation: type 2s steps(14, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  
+  .css-typing p:nth-child(2) {
+    width: 20em;
+    opacity: 0;
+    -webkit-animation: type2 3s steps(33, end);
+    animation: type2 3s steps(33, end);
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+  
+  .css-typing p:nth-child(3) {
+    width: 20em;
+    opacity: 0;
+    -webkit-animation: type3 3s steps(33, end), blink .5s step-end infinite alternate;
+    animation: type3 3s steps(33, end), blink .5s step-end infinite alternate;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+  @-webkit-keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+  @keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+  @-webkit-keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+  @keyframes type3 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes type3 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  @-webkit-keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
